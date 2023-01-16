@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<script>
+
+do{
+    var usuario = prompt('Digite a sua escolha pedra, papel ou tesoura').toLowerCase();
+    var maquina = Math.random();
+
+    if (maquina <= 0.33){
+        maquina = 'pedra'
+    } else if(maquina >= 0.34 && maquina <= 0.66){
+        maquina = 'papel'
+        } else {
+        maquina = 'tesoura'
+        }
+    
+    if (usuario == 'pedra' && maquina == 'tesoura'){
+        alert('Usuário ganhou');
+        }else if (usuario == 'pedra' && maquina == 'papel'){
+            alert('Máquina venceu');
+            }else if (usuario == 'pedra' && maquina == 'pedra'){
+                alert('Empate');
+            }
+
+    else if (usuario == 'papel' && maquina == 'pedra'){
+        alert('Usuário ganhou');
+        }else if (usuario == 'papel' && maquina == 'tesoura'){
+            alert('Máquina venceu');
+            }else if (usuario == 'papel' && maquina == 'papel'){
+                alert('Empate');
+            }
+
+    else if (usuario == 'tesoura' && maquina == 'papel'){
+        alert('Usuário ganhou');
+        }else if (usuario == 'tesoura' && maquina == 'pedra'){
+            alert('Máquina venceu');
+            }else if (usuario == 'tesoura' && maquina == 'tesoura'){
+                alert('Empate');
+            }
+
+    else{
+        alert('Não foi digitado nenhuma das 3 opções')
+    }
+    
+    var fim = parseInt(prompt('Digite 1 para jogar novamente ou digite qualquer tecla para sair'))
+    
+}
+while(fim == 1);
+
+</script>

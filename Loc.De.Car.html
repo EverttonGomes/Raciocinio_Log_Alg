@@ -1,0 +1,15 @@
+<meta charset="'UTF-8">
+<script>
+var n = parseInt(prompt('Digite a quantidade de carros da empresa'))
+var nomeCar = []
+var anoCar = []
+for(var i = 0;i < n;i++){
+    nomeCar[i] = prompt('Digite o nome do carro')
+    anoCar[i] = parseInt(prompt('Digite o ano do carro'))
+}
+for(var i = 0;i < n;i++){
+    if(anoCar[i] > 2002){
+        document.write(nomeCar[i] + '<br>')
+    }
+}
+</script>
