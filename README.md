@@ -1,2 +1,2 @@
-# Raciocionio_Log_Alg
+# Raciocínio_Log_Alg
 Raciocínio Lógico e Algoritmo.
